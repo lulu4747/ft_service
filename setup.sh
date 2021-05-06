@@ -27,3 +27,10 @@ kubectl apply -f srcs/ftps/ftps.yaml
 #--Nginx--
 docker build srcs/nginx -t ft_nginx
 kubectl apply -f srcs/nginx/nginx.yaml
+
+#--MySQL-server--
+docker build srcs/mysql/ -t ft_mysql
+kubectl apply -f srcs/mysql/mysql.yaml
+
+#--InfluxDB--
+
