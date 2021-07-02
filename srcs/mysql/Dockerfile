@@ -1,9 +1,8 @@
 FROM alpine:3.11.7
 
 
-RUN apk update
-RUN apk add mysql mysql-client --repository=http://dl-cdn.alpinelinux.org/alpine/edge/main
-RUN apk add openrc
+RUN apk update; apk upgrade
+RUN apk add mariadb mariadb-client
 RUN apk add wget
 
 RUN mkdir './data'

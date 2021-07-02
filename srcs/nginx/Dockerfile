@@ -5,7 +5,7 @@ RUN apk add nginx
 RUN apk add openssl
 
 RUN mkdir -p /usr/share/nginx/html
-RUN echo "html stuff" > /usr/share/nginx/html/index.html
+RUN echo "Welcome here" > /usr/share/nginx/html/index.html
 RUN mkdir -p /run/nginx
 
 COPY ./default.conf /etc/nginx/conf.d/
